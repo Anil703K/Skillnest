@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -73,3 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Skillnest
 Tutorials, projects , notes this website provides for programming languages.
 >>>>>>> b850df27bac9c7a711fbf1ca0e5ecf2ae1894928
+=======
+# Skillnest
+Tutorials, projects , notes this website provides for programming languages.
+>>>>>>> 161940e5615ac6cb81e7515b4777d242e581630e
