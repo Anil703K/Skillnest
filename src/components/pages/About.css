@@ -1,0 +1,28 @@
+.about-us {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  
+  .about-us h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #222;
+  }
+  
+  .about-us ul {
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  

@@ -1,0 +1,130 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+/* Main container */
+.project-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Individual card */
+.project-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Staggered card animations */
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }
+.project-card:nth-child(7) { animation-delay: 0.7s; }
+.project-card:nth-child(8) { animation-delay: 0.8s; }
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.project-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 6px;
+}
+
+/* Ordered list */
+.project-card ol {
+  list-style: decimal inside;
+  padding-left: 0;
+}
+
+.project-card li {
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.project-card li:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .project-main {
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-card li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .project-main {
+    grid-template-columns: 1fr;
+  }
+}
